@@ -1,0 +1,29 @@
+name: Startup Digest
+
+on:
+  schedule:
+    - cron: "30 0 * * *"  # 北京时间约 08:30
+  workflow_dispatch:
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install extension deps
+        run: pip install -r extensions/requirements.txt
+
+      - name: Run startup digest
+        env:
+          DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_MODEL: ${{ secrets.AI_MODEL }}
+          AI_API_BASE: ${{ secrets.AI_API_BASE }}
+        working-directory: extensions
+        run: python startup_digest/run.py

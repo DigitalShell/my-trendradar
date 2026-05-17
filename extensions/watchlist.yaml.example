@@ -1,0 +1,21 @@
+# 复制为 watchlist.yaml 后提交（勿提交真实持仓隐私）
+# 供 social_digest 过滤 RSS 标题 / 后续 MediaCrawler 关键词
+
+keywords:
+  - 美联储
+  - 降息
+  - 证监会
+  - 降准
+  - 国债
+  - 黄金
+  - 原油
+  - 人工智能
+  - 芯片
+
+# 可选：标的简称（与关键词合并匹配）
+symbols:
+  - 茅台
+  - 宁德时代
+  - 比亚迪
+
+max_items: 15

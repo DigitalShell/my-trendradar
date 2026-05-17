@@ -127,6 +127,18 @@ rss:
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
 
+    - id: "product-hunt"
+      name: "Product Hunt"
+      url: "https://www.producthunt.com/feed"
+
+    - id: "openai-blog"
+      name: "OpenAI Blog"
+      url: "https://openai.com/blog/rss.xml"
+
+    - id: "anthropic-news"
+      name: "Anthropic News"
+      url: "https://www.anthropic.com/rss.xml"
+
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"

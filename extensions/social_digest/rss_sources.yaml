@@ -1,0 +1,6 @@
+# 投资/宏观相关 RSS（MVP：标题级监测，非社媒评论）
+feeds:
+  - name: 雅虎财经
+    url: https://finance.yahoo.com/news/rssindex
+  - name: 华尔街见闻
+    url: https://rss.wallstreetcn.com/market/global
