@@ -4,3 +4,7 @@ feeds:
     url: https://finance.yahoo.com/news/rssindex
   - name: 华尔街见闻
     url: https://rss.wallstreetcn.com/market/global
+  - name: 财联社电报
+    url: https://rss.cls.cn/telegraph
+  - name: 36氪
+    url: https://36kr.com/feed
